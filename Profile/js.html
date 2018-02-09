@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js</title>
+</head>
+<body>
+	<script> 
+		var square = function(el){ return el * el ;}
+		var numbers = [1,2,3,4,5];
+		var results = numbers.map(square);
+		alert(results);
+	</script>
+	<script> 
+		var pets=["Dog","Cat","Rat","Rabbit"];
+		for(var i=0; i<pets.length; i++){
+		    alert(pets[i]);
+		}
+		pets.forEach(alert);
+	</script>
+	<script> 
+		var numbers = [1,2,3,4,5];
+		numbers.forEach(function(elem, idx, arr){
+			arr[idx]= elem * elem ; 
+		})
+		alert(numbers);
+	</script>
+
+
+
+</body>
+</html>
